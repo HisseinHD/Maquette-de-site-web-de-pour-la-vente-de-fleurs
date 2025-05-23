@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+header.hero {
+  background: url('hero.jpg') no-repeat center/cover;
+  height: 90vh;
+  position: relative;
+  color: white;
+}
+.navbar {
+  display: grid;
+  align-items: center; /* Aligne verticalement le logo et les liens */
+  justify-content: space-between; /* Espace entre le logo et les liens */
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  margin-right: 1rem; /* Ajoute un espace entre le logo et les liens */
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem; /* Espace entre les liens */
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+.logo {
+  font-size: 1.5rem;
+}
+.hero-content {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.scroll {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.features img {
+  width: 40px;
+  margin-bottom: 1rem;
+}
+.features p {
+  font-size: 0.9rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin: 2rem;
+  font-weight: bold;
+  border-left: 4px solid #72d47d;
+  padding-left: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem 2rem;
+}
+.grid.large {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card p {
+  padding: 1rem 0 0.5rem;
+}
+.card span {
+  font-weight: bold;
+}
+.card button {
+  background-color: #c1f0c3;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  background: #f8f8f8;
+  margin-top: 2rem;
+}header.hero {
+    background: url('hero.jpg') no-repeat center/cover;
+    height: 90vh;
+    position: relative;
+    color: white;
+  }
+  
+body {
+    background-image: url('C:\Users\hisse\Desktop\projet\images/bg.jpg'); /* Remplacez par le chemin de votre image */
+    background-size: cover; /* L'image couvre tout l'écran */
+    background-repeat: no-repeat; /* Pas de répétition de l'image */
+    background-attachment: fixed; /* L'image reste fixe lors du défilement */
+    background-position: center; /* L'image est centrée */
+  }
+
+.logo img {
+  height: 50px; /* Ajustez la hauteur selon vos besoins */
+  width: auto; /* Maintient les proportions de l'image */
+}
+
+.all-plants .grid .card:nth-child(2) {
+  order: 2; /* Place l'image numéro 2 après l'image numéro 3 */
+}
+.all-plants .grid .card:nth-child(3) {
+  order: 1; /* Place l'image numéro 3 avant l'image numéro 2 */
+}
