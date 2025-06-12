@@ -24,10 +24,11 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css
 
 ### 1. Cloner le dépôt
 
-```bash
+``bash
 git clone https://github.com/votre-nom-utilisateur/Maquette-de-site-web-de-pour-la-vente-de-fleurs
 .git
-cd Maquette-de-site-web-de-pour-la-vente-de-fleurs
+cd Maquette-de-site-web-de-pour-la-vente-de-fleurs`
+
 # 🛠️ Maquette-de-site-web-de-pour-la-vente-de-fleurs
 
 
