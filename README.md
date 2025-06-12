@@ -1,23 +1,23 @@
-Police d'ecriture Montserrat
+# Police d'ecriture Montserrat
 https://fonts.google.com/specimen/Montserrat?query=monts
 
-Police d'ecriture Abril
+# Police d'ecriture Abril
 https://fonts.google.com/specimen/Abril+Fatface?query=abril&sidebar.open&selection.family=Abril+Fatface
 
-Couleurs utilisées:
+# Couleurs utilisées:
 
-blanc: **#fff**
-blanc transparent: **#FFFFFFDF**
-vert clair: **#ADD981**
+## blanc: **#fff**
+## blanc transparent: **#FFFFFFDF**
+## vert clair: **#ADD981**
 
-Flaticon utilisés:
+# Flaticon utilisés:
 
-icon scroll vers le bas : **fas-fa-angle-down**
-icon de magasin : **fas fa-store**
-icon retrait sans contact : **fas fa-people-carry**
-icon livraison : **faq fa-truck**
+### icon scroll vers le bas : **fas-fa-angle-down**
+### icon de magasin : **fas fa-store**
+### icon retrait sans contact : **fas fa-people-carry**
+### icon livraison : **faq fa-truck**
 
-Lien integration flaticon : 
+# Lien integration flaticon : 
 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css
 
 # ⚙️ Installation et exécution
