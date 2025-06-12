@@ -37,7 +37,9 @@ Deuxieme page
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/votre-nom-utilisateur/nom-du-depot.git
-cd nom-du-depot
+git clone https://github.com/votre-nom-utilisateur/Maquette-de-site-web-de-pour-la-vente-de-fleurs
+.git
+cd Maquette-de-site-web-de-pour-la-vente-de-fleurs
+
 
 
