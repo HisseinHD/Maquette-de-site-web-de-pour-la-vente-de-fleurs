@@ -37,5 +37,7 @@ Application de gestion des employés avec interface utilisateur simple et intuit
 git clone https://github.com/votre-nom-utilisateur/nom-du-depot.git
 cd nom-du-depot
 
+![Capture d’écran du 2025-06-12 13-22-16](https://github.com/user-attachments/assets/1e26ff9d-8e90-41f6-9f5e-4c37820ce994)
 
+![Capture d’écran du 2025-06-12 13-22-37](https://github.com/user-attachments/assets/bdedbf37-69f7-459c-ac7c-809243a8a79f)
 
