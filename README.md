@@ -29,7 +29,7 @@ git clone https://github.com/votre-nom-utilisateur/Maquette-de-site-web-de-pour-
 .git
 cd Maquette-de-site-web-de-pour-la-vente-de-fleurs
 ```
-![Capture d’écran (79)](https://github.com/user-attachments/assets/4b7f18ce-92be-4dff-ad3c-93a00540215c)
+
 
 # 🛠️ Maquette-de-site-web-de-pour-la-vente-de-fleurs
 
