@@ -38,14 +38,15 @@ cd Maquette-de-site-web-de-pour-la-vente-de-fleurs
 Deuxieme page
 -![Capture d’écran du 2025-06-12 13-22-37](https://github.com/user-attachments/assets/9d523023-9e89-4387-af74-d7dc61a42c11)
 --
-![Capture d’écran du 2025-06-12 13-23-27](https://github.com/user-attachments/assets/612570b2-b5fd-4264-a350-6257ee3dab55)
 
 ### Troisieme Page
+![Capture d’écran du 2025-07-04 12-16-35](https://github.com/user-attachments/assets/a75f8948-c075-4492-a7f1-beca4aae2c6e)
 
-![Capture d’écran du 2025-06-12 13-23-58](https://github.com/user-attachments/assets/a4bf0bb4-8430-4a10-83cd-c3fa5531ada3)
+
 
 ### La derniere Page
-![Capture d’écran du 2025-06-12 13-24-12](https://github.com/user-attachments/assets/06a1ed9c-1e18-4fb5-8731-fc1e59d4a0e1)
+
+![Capture d’écran du 2025-07-04 12-16-47](https://github.com/user-attachments/assets/46a36eb5-bc05-45a3-aa11-3f85874c3d9f)
 
 
 
