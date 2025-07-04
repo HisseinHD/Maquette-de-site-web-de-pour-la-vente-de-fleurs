@@ -1,71 +1,92 @@
+/* Styles globaux */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   color: #333;
+  background-image: url('images/bg.jpg');
+  /* Chemin corrigé */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
+
+/* Header */
 header.hero {
-  background: url('hero.jpg') no-repeat center/cover;
+  background: url('images/hero.jpg') no-repeat center/cover;
+  /* Chemin corrigé */
   height: 90vh;
   position: relative;
   color: white;
 }
+
 .navbar {
-  display: grid;
-  align-items: center; /* Aligne verticalement le logo et les liens */
-  justify-content: space-between; /* Espace entre le logo et les liens */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 1rem 2rem;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.logo {
-  margin-right: 1rem; /* Ajoute un espace entre le logo et les liens */
+.logo img {
+  height: 50px;
+  width: auto;
 }
 
 .nav-links {
   display: flex;
-  gap: 2rem; /* Espace entre les liens */
+  gap: 2rem;
   list-style: none;
 }
+
 .nav-links a {
   text-decoration: none;
   color: white;
+  font-weight: bold;
 }
-.logo {
-  font-size: 1.5rem;
-}
+
 .hero-content {
   position: absolute;
   bottom: 20%;
   left: 10%;
 }
+
 .hero-content h1 {
   font-size: 3rem;
   font-weight: bold;
 }
-.scroll {
+
+.hero-content .scroll {
   margin-top: 1rem;
   font-size: 1rem;
 }
 
+/* Features */
 .features {
   display: flex;
   justify-content: space-around;
   text-align: center;
   padding: 2rem 1rem;
+  gap: 2rem;
+  /* Ajout d'un espacement entre les éléments */
 }
+
 .features img {
   width: 40px;
   margin-bottom: 1rem;
 }
+
 .features p {
   font-size: 0.9rem;
 }
 
+/* Sections */
 section h2 {
   font-size: 2rem;
   margin: 2rem;
@@ -78,40 +99,164 @@ section h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
+  /* Ajout d'un espacement entre les éléments */
   padding: 0 2rem 2rem;
 }
+
 .grid.large {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c d"
+    "e f";
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  /* Augmentation de l'espacement entre les éléments */
+  max-width: 1200px;
+  margin: auto;
 }
 
-.card {
+
+/* .card {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  margin: 1rem;
+ 
+} */
+
 .card img {
   width: 100%;
   height: auto;
 }
+
 .card p {
-  padding: 1rem 0 0.5rem;
-}
-.card span {
-  font-weight: bold;
-}
-.card button {
-  background-color: #c1f0c3;
-  border: none;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem 0 1rem;
-  cursor: pointer;
-  border-radius: 20px;
-  color: #2e7d32;
+  margin: 0.5rem 0;
   font-weight: bold;
 }
 
+.card span {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.card button {
+  margin: 0.5rem 0 1rem;
+  background-color: #e6fff2;
+  border: 1px solid #26e07f;
+  color: #26e07f;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card button:hover {
+  background-color: #c0ffe4;
+  color: #1e8f60;
+}
+
+/* Section Nos plantes */
+
+
+.plant-grid1 {
+  background-image: url('images/nos_plantes/1.jpg');
+  /* Chemin corrigé */
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.plant-grid2 {
+  background-image: url('images/nos_plantes/2.jpg');
+  /* Chemin corrigé */
+  grid-column: 3/5;
+}
+
+.plant-grid3 {
+  background-image: url('images/nos_plantes/3.jpg');
+  /* Chemin corrigé */
+  grid-column: 3/5;
+}
+
+.plant-grid4 {
+  background-image: url('images/nos_plantes/4.jpg');
+  /* Chemin corrigé */
+  grid-column: 1;
+  grid-row: 3/5;
+}
+
+.plant-grid5 {
+  background-image: url('images/nos_plantes/5.jpg');
+  /* Chemin corrigé */
+  grid-column: 2/4;
+  grid-row: 3/5;
+}
+
+.plant-grid6 {
+  background-image: url('images/nos_plantes/6.jpg');
+  /* Chemin corrigé */
+  grid-column: 4;
+  grid-row: 3/5;
+}
+.plant-box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;/* Ajout d'une marge pour éviter que les cartes soient collées */
+  /* Ajuste l'image pour remplir le conteneur */
+}
+
+.plant-details {
+  position: absolute;
+  bottom: 0;
+  /* Place les détails en bas de l'image */
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 1rem;
+}
+
+.plant-details p {
+  margin: 0.5rem 0;
+}
+
+.plant-details .btn {
+  margin-top: 0.5rem;
+  background-color: #26e07f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.plant-details .btn:hover {
+  background-color: #1e8f60;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+  .grid.large {
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f";
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    /* Réduction de l'espacement pour les petits écrans */
+  }
+}
+
+/* Footer */
 footer {
   display: flex;
   justify-content: space-between;
@@ -119,29 +264,83 @@ footer {
   font-size: 0.8rem;
   background: #f8f8f8;
   margin-top: 2rem;
-}header.hero {
-    background: url('hero.jpg') no-repeat center/cover;
-    height: 90vh;
-    position: relative;
-    color: white;
-  }
-  
-body {
-    background-image: url('C:\Users\hisse\Desktop\projet\images/bg.jpg'); /* Remplacez par le chemin de votre image */
-    background-size: cover; /* L'image couvre tout l'écran */
-    background-repeat: no-repeat; /* Pas de répétition de l'image */
-    background-attachment: fixed; /* L'image reste fixe lors du défilement */
-    background-position: center; /* L'image est centrée */
-  }
-
-.logo img {
-  height: 50px; /* Ajustez la hauteur selon vos besoins */
-  width: auto; /* Maintient les proportions de l'image */
+}
+/* Section Nos plantes */
+.all-plants {
+  margin: 100px;
 }
 
-.all-plants .grid .card:nth-child(2) {
-  order: 2; /* Place l'image numéro 2 après l'image numéro 3 */
+.plant-grid {
+  display: grid;
+  min-height: 150vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 400px);
+  gap: 2rem;
+  /* Augmentation de l'espacement entre les éléments */
 }
-.all-plants .grid .card:nth-child(3) {
-  order: 1; /* Place l'image numéro 3 avant l'image numéro 2 */
+
+.plant-box {
+  position: relative;
+  /* Permet de positionner les détails par rapport à l'image */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.plant-box::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+  /* Maintient le ratio 1:1 pour les images */
+}
+
+.plant-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ajuste l'image pour remplir le conteneur */
+}
+
+.plant-details {
+  position: absolute;
+  bottom: 0;
+  /* Place les détails en bas de l'image */
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 1rem;
+}
+.name-price {
+  display: flex;
+  flex-direction:unset;
+  align-items: left;
+  /* Centrer le texte */
+}
+.plant-details p {
+  margin: 0.5rem 0;
+}
+
+.plant-details .btn {
+  margin-top: 0.5rem;
+  background-color: #26e07f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.plant-details .btn:hover {
+  background-color: #1e8f60;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+  .plant-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    /* Réduction de l'espacement pour les petits écrans */
+  }
 }
